@@ -23,8 +23,8 @@ p, span{
 }
 
 #it, #is, span.active{
-	color: #f58f70 !important;
-  font-weight: bold;
+	color: #f98629 !important;
+  font-weight: 750;
 	transition: color 0.4s ease-out;
 	-ms-transition: color 0.4s ease-out;
     -moz-transition: color 0.4s ease-out;

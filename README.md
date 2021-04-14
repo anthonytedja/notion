@@ -9,4 +9,4 @@ Embed links are given by
 /notion/'file name'.html
 ```
 
-Example: [Dark mode weather widget](https://anthonytedja.github.io/notion/weather-dark.html)
+Example: [Dark Weather Widget](https://anthonytedja.github.io/notion/weather-dark.html)

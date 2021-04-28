@@ -1,82 +1,204 @@
-<div id="text-clock">
-  <!-- line 1 -->
-  <p id="line-1">
-    <span id="it" class="active">IT</span>L<span id="is" class="active">IS</span>AS<span id="tgif">GTFI</span>
-  </p>
-  <!-- line 2 -->
-  <p id="line-2">
-    AC<span id="quarter" class="desc">QUARTER</span>BS
-  </p>
-  <!-- line 3 -->
-  <p>
-    <span id="twenty" class="desc">TWENTY</span><span id="five" class="desc">FIVE</span>X
-  </p>
-  <!-- line 4 -->
-  <p>
-    <span id="half" class="desc">HALF</span>B<span id="ten" class="desc">TEN</span>F<span id="to" class="desc">TO</span>
-  </p>
-  <!-- line 5 -->
-  <p>
-    <span id="past" class="desc">PAST</span>ERU<span id="nine" class="hr">NINE</span>
-  </p>
-  <!-- line 6 -->
-  <p>
-    <span id="one" class="hr">ONE</span><span id="six" class="hr">SIX</span><span id="three" class="hr">THREE</span>
-  </p>
-  <!-- line 7 -->
-  <p id="line-7">
-    <span id="four" class="hr">FOUR</span><span id="five-hr" class="hr">FIVE</span><span id="two" class="hr">TWO</span>
-  </p>
-  <!-- line 8 -->
-  <p id="line-8">
-    <span id="eight" class="hr">EIGHT</span><span id="eleven" class="hr">ELEVEN</span>
-  </p>
-  <!-- line 9 -->
-  <p id="line-9">
-    <span id="seven" class="hr">SEVEN</span><span id="twelve" class="hr">TWELVE</span>
-  </p>
-  <!-- line 10 -->
-  <p id="line-10">
-    <span id="ten-hr" class="hr">TEN</span>SE<span id="oclock" class="desc">OCLOCK</span>
-  </p>
-  <!-- line 11 -->
-  <p id="line-11">
-    <span id="midnight" class="hr">MIDNIGHT</span>
-  </p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="clock-dark.css" type="text/css">
-</head>
-<script>
-  function textClock() {
 
-    var newDate = new Date(),
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" type="image/png"
+    href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+  <link rel="mask-icon" type=""
+    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+    color="#111" />
+
+  <title>Text Clock - Dark</title>
+
+  <style>
+    body {
+      background: #2F3437;
+      color: #fff;
+      font-family: Helvetica, Arial;
+      text-align: justify;
+      pointer-events: none;
+      -webkit-user-select: none;
+    }
+
+    p,
+    span {
+      color: #FFFFFF;
+      transition: color 0.4s ease-out;
+      -ms-transition: color 0.4s ease-out;
+      -moz-transition: color 0.4s ease-out;
+      -webkit-transition: color 0.4s ease-out;
+      letter-spacing: 12.1px;
+      font-size: 17px;
+    }
+
+    #midnight {
+      color: #FFFFFF;
+      letter-spacing: 23px;
+    }
+
+    #it,
+    #is,
+    span.active {
+      color: #f58f70 !important;
+      transition: color 0.4s ease-out;
+      -ms-transition: color 0.4s ease-out;
+      -moz-transition: color 0.4s ease-out;
+      -webkit-transition: color 0.4s ease-out;
+    }
+
+    #text-clock {
+      width: 242px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+    }
+
+    #line-1,
+    #line-1 span {
+      letter-spacing: 13.9px;
+    }
+
+    #line-2,
+    #line-2 span {
+      letter-spacing: 11.3px;
+    }
+
+    #line-7,
+    #line-7 span {
+      letter-spacing: 11.8px;
+    }
+
+    #line-8,
+    #line-8 span {
+      letter-spacing: 12.3px;
+    }
+
+    #line-9,
+    #line-9 span {
+      letter-spacing: 11.6px;
+    }
+
+    #line-10,
+    #line-10 span {
+      letter-spacing: 11.6px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
+</head>
+
+<body translate="no">
+  <!--
+ DOWNLOAD ME HERE: 
+ https://chrome.google.com/webstore/detail/text-clock/caacmmeopdailkdlgkimndodjipilaha
+-->
+  <div id="text-clock">
+    <!-- line 1 -->
+    <p id="line-1">
+      <span id="it" class="active">IT</span>L<span id="is" class="active">IS</span>AS<span id="tgif">GTFI</span>
+    </p>
+    <!-- line 2 -->
+    <p id="line-2">
+      AC<span id="quarter" class="desc">QUARTER</span>BS
+    </p>
+    <!-- line 3 -->
+    <p>
+      <span id="twenty" class="desc">TWENTY</span><span id="five" class="desc">FIVE</span>X
+    </p>
+    <!-- line 4 -->
+    <p>
+      <span id="half" class="desc">HALF</span>B<span id="ten" class="desc">TEN</span>F<span id="to"
+        class="desc">TO</span>
+    </p>
+    <!-- line 5 -->
+    <p>
+      <span id="past" class="desc">PAST</span>ERU<span id="nine" class="hr">NINE</span>
+    </p>
+    <!-- line 6 -->
+    <p>
+      <span id="one" class="hr">ONE</span><span id="six" class="hr">SIX</span><span id="three" class="hr">THREE</span>
+    </p>
+    <!-- line 7 -->
+    <p id="line-7">
+      <span id="four" class="hr">FOUR</span><span id="five-hr" class="hr">FIVE</span><span id="two"
+        class="hr">TWO</span>
+    </p>
+    <!-- line 8 -->
+    <p id="line-8">
+      <span id="eight" class="hr">EIGHT</span><span id="eleven" class="hr">ELEVEN</span>
+    </p>
+    <!-- line 9 -->
+    <p id="line-9">
+      <span id="seven" class="hr">SEVEN</span><span id="twelve" class="hr">TWELVE</span>
+    </p>
+    <!-- line 10 -->
+    <p id="line-10">
+      <span id="ten-hr" class="hr">TEN</span>SE<span id="oclock" class="desc">OCLOCK</span>
+    </p>
+    <!-- line 11 -->
+    <p id="line-11">
+      <span id="midnight" class="hr">MIDNIGHT</span>
+    </p>
+  </div>
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script id="rendered-js">
+    function textClock() {
+
+      var newDate = new Date(),
         day = newDate.getDay(),
         hours = newDate.getHours(),
         minutes = newDate.getMinutes().toString(),
         seconds = newDate.getSeconds().toString();
 
-    if (hours > 12 && hours !== 0 && hours !== 23) {
+      if (hours > 12 && hours !== 0 && hours !== 23) {
         hours = hours - 12;
-    }
-    if (minutes < 10) {
+      }
+      if (minutes < 10) {
         minutes = 0 + minutes;
-    }
-    if (seconds < 10) {
+      }
+      if (seconds < 10) {
         seconds = 0 + seconds;
-    }
+      }
 
-    var minsSecs = minutes + seconds;
-    if (minsSecs > 3230) {
+      var minsSecs = minutes + seconds;
+      if (minsSecs > 3230) {
         hours++;
-    }
+      }
 
-    if (day == 5) {
+      if (day == 5) {
         $('#tgif').html('TGIF');
-    }
+      }
 
-    hoursObj = {
+      hoursObj = {
         1: '#one',
         2: '#two',
         3: '#three',
@@ -92,55 +214,59 @@
         23: '#eleven',
         24: '#midnight',
         0: '#midnight'
-    };
+      };
 
-    updateHour(hoursObj[hours]);
+      updateHour(hoursObj[hours]);
 
-    if ((minsSecs >= 5730 && minsSecs < 6000) || (minsSecs >= 0 && minsSecs < 230)) {
+      if (minsSecs >= 5730 && minsSecs < 6000 || minsSecs >= 0 && minsSecs < 230) {
         if (hours !== 24 && hours !== 0) {
-            updateDesc('#oclock');
+          updateDesc('#oclock');
         }
-    } else if (minsSecs >= 230 && minsSecs < 730) {
+      } else if (minsSecs >= 230 && minsSecs < 730) {
         updateDesc('#five, #past');
-    } else if (minsSecs >= 730 && minsSecs < 1230) {
+      } else if (minsSecs >= 730 && minsSecs < 1230) {
         updateDesc('#ten, #past');
-    } else if (minsSecs >= 1230 && minsSecs < 1730) {
+      } else if (minsSecs >= 1230 && minsSecs < 1730) {
         updateDesc('#quarter, #past');
-    } else if (minsSecs >= 1730 && minsSecs < 2230) {
+      } else if (minsSecs >= 1730 && minsSecs < 2230) {
         updateDesc('#twenty, #past');
-    } else if (minsSecs >= 2230 && minsSecs < 2730) {
+      } else if (minsSecs >= 2230 && minsSecs < 2730) {
         updateDesc('#twenty, #five, #past');
-    } else if (minsSecs >= 2730 && minsSecs < 3230) {
+      } else if (minsSecs >= 2730 && minsSecs < 3230) {
         updateDesc('#half, #past');
-    } else if (minsSecs >= 3230 && minsSecs < 3730) {
+      } else if (minsSecs >= 3230 && minsSecs < 3730) {
         updateDesc('#twenty, #five, #to');
-    } else if (minsSecs >= 3730 && minsSecs < 4230) {
+      } else if (minsSecs >= 3730 && minsSecs < 4230) {
         updateDesc('#twenty, #to');
-    } else if (minsSecs >= 4230 && minsSecs < 4730) {
+      } else if (minsSecs >= 4230 && minsSecs < 4730) {
         updateDesc('#quarter, #to');
-    } else if (minsSecs >= 4730 && minsSecs < 5230) {
+      } else if (minsSecs >= 4730 && minsSecs < 5230) {
         updateDesc('#ten, #to');
-    } else if (minsSecs >= 5230 && minsSecs < 5730) {
+      } else if (minsSecs >= 5230 && minsSecs < 5730) {
         updateDesc('#five, #to');
-    } else {
+      } else {
         updateDesc();
+      }
     }
-}
 
-function updateDesc(classes) {
-    $('.desc').removeClass('active');
-    $(classes).addClass('active');
-}
+    function updateDesc(classes) {
+      $('.desc').removeClass('active');
+      $(classes).addClass('active');
+    }
 
-function updateHour(classes) {
-    $('.hr').removeClass('active');
-    $(classes).addClass('active');
-}
+    function updateHour(classes) {
+      $('.hr').removeClass('active');
+      $(classes).addClass('active');
+    }
 
-setInterval(function() {
+    setInterval(function () {
+      textClock();
+    }, 1000);
+
     textClock();
-}, 1000);
+    
+  </script>
 
-textClock();
+</body>
 
-</script>
+</html>

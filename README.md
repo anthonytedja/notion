@@ -12,4 +12,4 @@ Embed links are given by
 
 Example: [Dark Weather Widget](https://anthonytedja.github.io/notion/weather-dark.html)
 
-[Usage](anthonytedja.github.com/notion/img/usage.jpg)
+[Usage](usage.jpg)

@@ -10,6 +10,10 @@ Embed links are given by
 /notion/'file name'.html
 ```
 
-Example: [Dark Weather Widget](https://anthonytedja.github.io/notion/weather-dark.html)
 
-[Usage](usage.jpg)
+<div align="center">
+    <img src="usage.jpg" alt="Widget usage" height=800, width=800/>
+</div>
+
+
+Example: [Dark Weather Widget](https://anthonytedja.github.io/notion/weather-dark.html)

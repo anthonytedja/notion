@@ -1,11 +1,123 @@
-<div class="container">
-  <div class="clock">
-      <div class="hour"></div>
-      <div class="minute"></div>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="clock.css" type="text/css">
-  <script> src="clock.js" </script>
+
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" type="image/png"
+    href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+  <link rel="mask-icon" type=""
+    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+    color="#111" />
+
+  <title>Clock</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #2F3437;
+    }
+
+    .container {
+      margin: 40px auto 20px;
+      width: 250px;
+    }
+
+    .clock {
+      border: 5px solid #FFF;
+      border-radius: 100%;
+      display: block;
+      height: 250px;
+      width: 250px;
+      position: relative;
+    }
+
+    .clock .hour {
+      background: #f58f70;
+      height: 0;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      width: 0;
+      -webkit-transform-origin: 50% 100%;
+      -moz-transform-origin: 50% 100%;
+      -o-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      margin: -60px -2px 0;
+      padding: 60px 2px 0;
+    }
+
+    .clock .minute {
+      background: #f58f70;
+      height: 0;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      width: 0;
+      -webkit-transform-origin: 50% 100%;
+      -moz-transform-origin: 50% 100%;
+      -o-transform-origin: 50% 100%;
+      -ms-transform-origin: 50% 100%;
+      transform-origin: 50% 100%;
+      margin: -105px -2px 0;
+      padding: 105px 2px 0;
+    }
+  </style>
+
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+
 </head>
+
+<body translate="no">
+  <div class="container">
+    <div class="clock">
+      <div class="hour"></div>
+      <div class="minute"></div>
+    </div>
+  </div>
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js'></script>
+  <script id="rendered-js">
+    function clock() {
+      var t = moment(),
+        a = t.minutes() * 6,
+        o = t.hours() % 12 / 12 * 360 + a / 12;
+      $(".hour").css("transform", "rotate(" + o + "deg)");
+      $(".minute").css("transform", "rotate(" + a + "deg)");
+    }
+    function refreshClock() {
+      clock(), setTimeout(refreshClock, 1000);
+    }
+    refreshClock();
+
+  </script>
+
+</body>
+
+</html>

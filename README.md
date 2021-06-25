@@ -4,7 +4,7 @@ notion hosts widgets for Notion pages.
 
 ## Usage
 
-Embed links are given by
+Embed widget links are given by
 
 ```cpp
 /notion/'file name'.html

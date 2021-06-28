@@ -10,4 +10,4 @@ Embed widget links are given by
 /notion/'file name'.html
 ```
 
-[![Widget usage](usage.jpg)](https://anthonytedja.github.io/notion/weather-dark.html)
+[![Widget usage](usage.jpg)](https://www.notion.so/Embeds-6b7133323590447b9d8e963c136ebce5)

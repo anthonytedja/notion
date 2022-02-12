@@ -6,10 +6,11 @@
 
 ## Usage
 
-Embed widget links are given by `anthonytedja.github.io/notion/<filename>.html`
+Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 
 - Copy the URL for the widget you want in your notion page. Check out the preview section and click on the widget you want to take you to the URL
 - Paste the URL into Notion and choose "create embed"
+- Click on the widget to switch between light and dark modes and the widget will remember your settings
 - Resize the widget to how you want and you're all set up!
 
 ## Preview
@@ -24,7 +25,7 @@ Embed widget links are given by `anthonytedja.github.io/notion/<filename>.html`
 ## Features
 
 - Mobile friendly
-- Supports both light and dark modes
+- JS local storage to remember light and dark mode settings
 
 ## Built With
 

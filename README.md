@@ -11,7 +11,7 @@ Embed widget links are given by `anthonytedja.github.io/notion/<filename>.html`
 - Copy the URL for the widget you want in your notion page. Check out the preview section and click on the widget you want to take you to the URL
 - Paste the URL into Notion and choose "create embed"
 
-![Embed](assets/embed.mp4)
+![Embed](assets/embed.gif)
 
 ## Preview
 

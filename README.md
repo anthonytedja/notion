@@ -1,6 +1,6 @@
 # notion
 
-![Usage Gif](assets/usage.gif)
+![Usage Gif](assets/demo.gif)
 
 > notion hosts widgets for Notion pages.
 

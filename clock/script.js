@@ -17,7 +17,7 @@ const setClock = () => {
 setClock();
 setInterval(setClock, 1000);
 
-window.onclick = () => {
+window.onmousedown = () => {
 	const currentTheme = localStorage.getItem('clock-data-theme');
 	console.log(currentTheme);
 	if (currentTheme === 'dark') {

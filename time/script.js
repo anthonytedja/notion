@@ -91,7 +91,7 @@ setInterval(function() {
 
 textClock();
 
-window.onclick = () => {
+window.onmousedown = () => {
 	const currentTheme = localStorage.getItem('time-data-theme');
 	console.log(currentTheme);
 	if (currentTheme === 'dark') {

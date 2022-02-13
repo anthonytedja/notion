@@ -7,7 +7,7 @@ function script(d, s, id) {
 	fjs.parentNode.insertBefore(js, fjs);
 }
 
-window.onclick = () => {
+window.onmousedown = () => {
 	const currentTheme = document.getElementById('weather').getAttribute('data-theme');
 	console.log(currentTheme);
 	if (currentTheme == 'gray') {

@@ -91,7 +91,11 @@ setInterval(function() {
 
 textClock();
 
-window.onmousedown = () => {
+let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+
+window.addEventListener(touchEvent, mode);
+
+function mode() {
 	const currentTheme = localStorage.getItem('time-data-theme');
 	console.log(currentTheme);
 	if (currentTheme === 'dark') {
@@ -99,7 +103,7 @@ window.onmousedown = () => {
 	} else {
 		dark();
 	}
-};
+}
 
 function light() {
 	localStorage.setItem('time-data-theme', 'light');

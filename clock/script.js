@@ -17,15 +17,19 @@ const setClock = () => {
 setClock();
 setInterval(setClock, 1000);
 
-window.onmousedown = () => {
+let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+
+window.addEventListener(touchEvent, mode);
+
+function mode() {
 	const currentTheme = localStorage.getItem('clock-data-theme');
 	console.log(currentTheme);
-	if (currentTheme === 'dark') {
+	if (currentTheme == 'dark') {
 		light();
 	} else {
 		dark();
 	}
-};
+}
 
 function light() {
 	localStorage.setItem('clock-data-theme', 'light');

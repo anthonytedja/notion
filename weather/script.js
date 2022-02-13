@@ -7,7 +7,11 @@ function script(d, s, id) {
 	fjs.parentNode.insertBefore(js, fjs);
 }
 
-window.onmousedown = () => {
+let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+
+window.addEventListener(touchEvent, mode);
+
+function mode() {
 	const currentTheme = document.getElementById('weather').getAttribute('data-theme');
 	console.log(currentTheme);
 	if (currentTheme == 'gray') {
@@ -15,7 +19,7 @@ window.onmousedown = () => {
 	} else {
 		dark();
 	}
-};
+}
 
 function light() {
 	localStorage.setItem('data-theme', 'pure');

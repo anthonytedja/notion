@@ -16,10 +16,9 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 ## Preview
 
 [![Clock](assets/clock.jpg)](https://anthonytedja.github.io/notion/clock/)
+[![Weather](assets/weather)](https://anthonytedja.github.io/notion/weather/)
 [![Time Light Mode](assets/time-light.jpg)](https://anthonytedja.github.io/notion/time-light.html)
 [![Time Dark Mode](assets/time-dark.jpg)](https://anthonytedja.github.io/notion/time-dark.html)
-[![Weather Light Mode](assets/weather-light.jpg)](https://anthonytedja.github.io/notion/weather-light.html)
-[![Weather Dark Mode](assets/weather-dark.jpg)](https://anthonytedja.github.io/notion/weather-dark.html)
 
 ## Features
 

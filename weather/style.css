@@ -1,0 +1,21 @@
+:root {
+    --main-bg-color: #fff;
+}
+
+[data-theme="gray"] {
+    --main-bg-color: #2f3437;
+}
+
+* {
+    transition: all ease 0.2s;
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-bg-color);
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+}

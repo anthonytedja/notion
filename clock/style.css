@@ -1,8 +1,8 @@
 :root {
 	--main-bg-color: #fff;
-	--main-text-color: #b4b4b4;
-	--main-sec-color: #f58f70;
-	--main-border-color: #b4b4b4;
+	--main-text-color: #f58f70;
+	--main-sec-color: #37352f;
+	--main-border-color: #37352f;
 }
 
 [clock-data-theme="dark"] {

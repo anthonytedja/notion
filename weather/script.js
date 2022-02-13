@@ -22,7 +22,7 @@ function light() {
 	document.documentElement.setAttribute('data-theme', 'pure');
 	document.getElementById('weather').setAttribute('data-theme', 'pure');
 	document.getElementById('weather').removeAttribute('data-basecolor');
-	document.getElementById('weather').setAttribute('data-textcolor', '#878686');
+	document.getElementById('weather').setAttribute('data-textcolor', '#37352f');
 	document.getElementById('weather').removeAttribute('data-cloudfill');
 	script(document, 'script', 'weatherwidget-io-js');
 }

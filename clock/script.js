@@ -1,7 +1,7 @@
 const deg = 6;
-const hour = document.querySelector(".hour");
-const min = document.querySelector(".min");
-const sec = document.querySelector(".sec");
+const hour = document.querySelector('.hour');
+const min = document.querySelector('.min');
+const sec = document.querySelector('.sec');
 
 const setClock = () => {
 	let day = new Date();
@@ -18,9 +18,9 @@ setClock();
 setInterval(setClock, 1000);
 
 window.onclick = () => {
-	const currentTheme = localStorage.getItem("data-theme");
+	const currentTheme = localStorage.getItem('clock-data-theme');
 	console.log(currentTheme);
-	if (currentTheme === "dark") {
+	if (currentTheme === 'dark') {
 		light();
 	} else {
 		dark();
@@ -28,20 +28,19 @@ window.onclick = () => {
 };
 
 function light() {
-    localStorage.setItem("data-theme", "light");
-	document.documentElement.setAttribute("data-theme", "light");
-};
+	localStorage.setItem('clock-data-theme', 'light');
+	document.documentElement.setAttribute('clock-data-theme', 'light');
+}
 
 function dark() {
-    localStorage.setItem("data-theme", "dark");
-	document.documentElement.setAttribute("data-theme", "dark");
-};
+	localStorage.setItem('clock-data-theme', 'dark');
+	document.documentElement.setAttribute('clock-data-theme', 'dark');
+}
 
-let currentTheme = "dark";
-currentTheme = localStorage.getItem("data-theme");
+let currentTheme = localStorage.getItem('clock-data-theme');
 
-if (currentTheme == "light") {
+if (currentTheme == 'light') {
 	light();
 } else {
-  	dark();
+	dark();
 }

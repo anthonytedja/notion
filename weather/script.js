@@ -37,8 +37,7 @@ function dark() {
 	script(document, 'script', 'weatherwidget-io-js');
 }
 
-let currentTheme = 'gray';
-currentTheme = localStorage.getItem('data-theme');
+let currentTheme = localStorage.getItem('data-theme');
 
 if (currentTheme == 'pure') {
 	light();

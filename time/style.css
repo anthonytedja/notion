@@ -4,7 +4,7 @@
 	--main-time-color: #f58f70;
 }
 
-[data-theme="dark"] {
+[time-data-theme="dark"] {
 	--main-bg-color: #2f3437;
 	--main-text-color: #444;
 	--main-time-color: #f58f70;

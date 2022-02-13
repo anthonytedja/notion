@@ -21,17 +21,27 @@ window.onclick = () => {
 	const currentTheme = localStorage.getItem("data-theme");
 	console.log(currentTheme);
 	if (currentTheme === "dark") {
-		localStorage.setItem("data-theme", "light");
-		document.documentElement.setAttribute("data-theme", "light");
+		light();
 	} else {
-		localStorage.setItem("data-theme", "dark");
-		document.documentElement.setAttribute("data-theme", "dark");
+		dark();
 	}
 };
 
-let currentTheme = "dark";
-currentTheme = localStorage.getItem("data-theme")
+function light() {
+    localStorage.setItem("data-theme", "light");
+	document.documentElement.setAttribute("data-theme", "light");
+};
 
-if (currentTheme) {
-	document.documentElement.setAttribute("data-theme", currentTheme);
+function dark() {
+    localStorage.setItem("data-theme", "dark");
+	document.documentElement.setAttribute("data-theme", "dark");
+};
+
+let currentTheme = "dark";
+currentTheme = localStorage.getItem("data-theme");
+
+if (currentTheme == "light") {
+	light();
+} else {
+  	dark();
 }

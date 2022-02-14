@@ -51,6 +51,7 @@ body {
 .countdown--ended {
 	-webkit-animation: buzz 0.5s;
 	animation: buzz 0.5s;
+	animation-iteration-count: 2;
 }
 
 .countdown:active {

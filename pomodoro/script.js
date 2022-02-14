@@ -23,6 +23,10 @@ function Timer(duration, element) {
 	});
 }
 
+function soundAlarm() {
+	document.getElementById('alarm').play();
+}
+
 Timer.prototype.start = function() {
 	var self = this;
 	var start = null;
@@ -45,7 +49,8 @@ Timer.prototype.start = function() {
 
 			self.frameReq = window.requestAnimationFrame(draw);
 		} else {
-			//self.running = false;
+			soundAlarm();
+			this.running = false;
 			self.els.seconds.textContent = 0;
 			self.els.ticker.style.height = '0%';
 			self.element.classList.add('countdown--ended');

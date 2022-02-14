@@ -1,14 +1,14 @@
 :root {
 	--main-bg-color: #fff;
-	--main-text-color: #000;
-	--main-fill-color: #f58f70;
+	--main-text-color: #f58f70;
+	--main-fill-color: #e2e2e2;
 	--main-border-color: #000;
 }
 
 [pomodoro-timer-data-theme="dark"] {
 	--main-bg-color: #2f3437;
-	--main-text-color: #fff;
-	--main-fill-color: #f58f70;
+	--main-text-color: #f58f70;
+	--main-fill-color: #41484c;
 	--main-border-color: #fff;
 }
 
@@ -66,6 +66,7 @@ body {
 	left: 0;
 	bottom: 0;
 	background: var(--main-fill-color);
+	opacity: 0.5;
 }
 
 .countdown__digit {

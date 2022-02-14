@@ -1,4 +1,6 @@
 const touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+// const alarm = document.getElementById('alarm');
+const alarm = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/580991/timer.mp3');
 
 function Timer(duration, element) {
 	var self = this;
@@ -23,10 +25,6 @@ function Timer(duration, element) {
 	});
 }
 
-function soundAlarm() {
-	document.getElementById('alarm').play();
-}
-
 Timer.prototype.start = function() {
 	var self = this;
 	var start = null;
@@ -49,7 +47,7 @@ Timer.prototype.start = function() {
 
 			self.frameReq = window.requestAnimationFrame(draw);
 		} else {
-			soundAlarm();
+			alarm.play();
 			this.running = false;
 			self.els.seconds.textContent = 0;
 			self.els.ticker.style.height = '0%';
@@ -61,6 +59,8 @@ Timer.prototype.start = function() {
 };
 
 Timer.prototype.reset = function() {
+	alarm.pause();
+	alarm.currentTime = 0;
 	this.running = false;
 	window.cancelAnimationFrame(this.frameReq);
 	this.els.seconds.textContent = fmtMSS(this.duration / 1000);

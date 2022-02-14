@@ -18,6 +18,7 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 [![Clock](assets/clock.jpg)](https://anthonytedja.github.io/notion/clock/)
 [![Weather](assets/weather.jpg)](https://anthonytedja.github.io/notion/weather/)
 [![Time](assets/time.jpg)](https://anthonytedja.github.io/notion/time/)
+[![Pomodoro Timer](assets/pomodoro.jpg)](https://anthonytedja.github.io/notion/pomodoro/)
 
 ## Features
 

@@ -1,6 +1,5 @@
 const touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
-// const alarm = document.getElementById('alarm');
-const alarm = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/580991/timer.mp3');
+const alarm = new Audio('alarm.mp3');
 
 function Timer(duration, element) {
 	var self = this;
@@ -48,6 +47,7 @@ Timer.prototype.start = function() {
 			self.frameReq = window.requestAnimationFrame(draw);
 		} else {
 			alarm.play();
+			alarm.loop = true;
 			this.running = false;
 			self.els.seconds.textContent = 0;
 			self.els.ticker.style.height = '0%';

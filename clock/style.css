@@ -27,6 +27,7 @@ body {
 	background-color: var(--main-bg-color);
 	position: relative;
 	transition: all ease 0.2s;
+	overflow: hidden;
 }
 
 .clock {

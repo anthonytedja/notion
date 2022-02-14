@@ -35,6 +35,7 @@ body {
 	font-family: Helvetica, Arial;
 	text-align: justify;
 	pointer-events: none;
+	overflow: hidden;
 }
 
 p, span {

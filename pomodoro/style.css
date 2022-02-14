@@ -12,39 +12,32 @@
 	--main-border-color: #fff;
 }
 
-html, body {
-	height: 100%;
-}
-
-body {
-	background: var(--main-bg-color);
-}
-
 * {
 	touch-action: none;
 	color: var(--main-text-color);
+	box-sizing: border-box;
 	transition: all ease 0.2s;
 }
 
-.container {
-	height: 100%;
+body {
+	margin: 40px auto 20px;
+	background: var(--main-bg-color);
+	font-family: 'Oswald', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	position: relative;
 }
 
 .countdown {
 	display: block;
-	width: 66vmin;
-	height: 66vmin;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Oswald', sans-serif;
-	font-weight: 400;
-	font-size: 20vmin;
+	min-height: 16em;
+	min-width: 16em;
 	overflow: hidden;
 	cursor: pointer;
 	transition: width, height, border-radius, font-size;
@@ -83,6 +76,7 @@ body {
 	-ms-user-select: none;
 	user-select: none;
 	z-index: 1;
+	font-size: 5em;
 }
 
 @-webkit-keyframes buzz {

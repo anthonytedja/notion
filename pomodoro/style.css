@@ -116,3 +116,24 @@ body {
 		transform: rotate(0);
 	}
 }
+
+#logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 40px;
+	position: absolute;
+	margin-top: 500px;
+}
+
+#logo:hover {
+	opacity: 0.3;
+	transform: scale(1.1);
+}
+
+@media screen and (max-width:750px) {
+	#logo {
+		display: none;
+	}
+}

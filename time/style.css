@@ -12,6 +12,7 @@
 
 * {
 	transition: all ease 0.2s;
+	color: var(--main-time-color);
 }
 
 .noselect {
@@ -30,12 +31,17 @@
 }
 
 body {
+	margin: 40px auto 20px;
 	background: var(--main-bg-color);
 	color: var(--main-text-color);
 	font-family: Helvetica, Arial;
 	text-align: justify;
-	pointer-events: none;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
 }
 
 p, span {
@@ -63,14 +69,8 @@ p, span {
 }
 
 #text-clock {
-	width: 242px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	width: 250px;
+	position: relative;
 	text-transform: uppercase;
 }
 
@@ -98,6 +98,23 @@ p, span {
 	letter-spacing: 11.6px;
 }
 
-.hidden {
-	display: none;
+#logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 40px;
+	position: absolute;
+	margin-top: 650px;
+}
+
+#logo:hover {
+	opacity: 0.3;
+	transform: scale(1.1);
+}
+
+@media screen and (max-width:750px) {
+	#logo {
+		display: none;
+	}
 }

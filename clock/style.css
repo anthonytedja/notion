@@ -15,6 +15,7 @@
 * {
 	box-sizing: border-box;
 	transition: all ease 0.2s;
+	color: var(--main-text-color);
 }
 
 body {
@@ -106,4 +107,25 @@ body {
 	width: 2px;
 	background-color: var(--main-sec-color);
 	border-radius: 2px;
+}
+
+#logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-size: 40px;
+	position: absolute;
+	margin-top: 358px;
+}
+
+#logo:hover {
+	opacity: 0.3;
+	transform: scale(1.1);
+}
+
+@media screen and (max-width:750px) {
+	#logo {
+		display: none;
+	}
 }

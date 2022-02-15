@@ -8,6 +8,7 @@
 
 * {
     transition: all ease 0.2s;
+    color: #f58f70;
 }
 
 body {
@@ -19,4 +20,26 @@ body {
 .inactiveLink {
     pointer-events: none;
     cursor: default;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 40px;
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#logo:hover {
+    opacity: 0.3;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:750px) {
+    #logo {
+        display: none;
+    }
 }

@@ -16,10 +16,15 @@ function Timer(duration, element) {
 		if (!e) var e = window.event;
 		e.cancelBubble = true;
 		if (e.stopPropagation) e.stopPropagation();
-		if (self.running) {
-			self.reset();
-		} else {
-			self.start();
+		console.log(e.detail);
+		if (e.detail == 2) {
+			timermode();
+		} else if (e.detail == 1) {
+			if (self.running) {
+				self.reset();
+			} else {
+				self.start();
+			}
 		}
 	});
 }
@@ -81,6 +86,30 @@ function fmtMSS(s) {
 }
 
 window.addEventListener(touchEvent, mode);
+
+function timermode() {
+	const timertype = document.documentElement.getAttribute('pomodoro-timer-mode');
+	console.log(timertype);
+	if (timertype == 'break') {
+		workmode();
+	} else {
+		breakmode();
+	}
+}
+
+function workmode() {
+	document.documentElement.setAttribute('pomodoro-timer-mode', 'work');
+	document.querySelector(':root').style.setProperty('--main-text-color', '#f58f70');
+	timer.duration = 1500000;
+	timer.reset();
+}
+
+function breakmode() {
+	document.documentElement.setAttribute('pomodoro-timer-mode', 'break');
+	document.querySelector(':root').style.setProperty('--main-text-color', '#8cc8ff');
+	timer.duration = 300000;
+	timer.reset();
+}
 
 function mode() {
 	const currentTheme = localStorage.getItem('pomodoro-timer-data-theme');

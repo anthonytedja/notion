@@ -17,9 +17,10 @@ function Timer(duration, element) {
 		e.cancelBubble = true;
 		if (e.stopPropagation) e.stopPropagation();
 		console.log(e.detail);
+		e.preventDefault();
 		if (e.detail == 2) {
 			timermode();
-		} else if (e.detail == 1) {
+		} else {
 			if (self.running) {
 				self.reset();
 			} else {

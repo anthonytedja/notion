@@ -15,19 +15,19 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 
 ## Preview
 
-- Pomodoro Timer : [Pomodoro](https://todoist.com/productivity-methods/pomodoro-technique) is a productivity technique with a 25 minute work session followed by a 5 minute break for each pomodoro period. Click on the timer to start the countdown, or double click to switch the timer mode. Once the timer runs out, a notification will be played until the timer is reset.
+- `Pomodoro Timer` : [Pomodoro](https://todoist.com/productivity-methods/pomodoro-technique) is a productivity technique where a 25 minute work session is followed by a 5 minute break for each pomodoro period. Click on the timer to start the countdown, or double click to switch the timer modes from work to break. A notification will be played when the timer hits 0 so you don't need to keep your eyes on the widget.
 
 [![Pomodoro Timer](assets/pomodoro.jpg)](https://anthonytedja.github.io/notion/pomodoro/)
 
-- Weather : Powered by [weatherwidget.io](https://weatherwidget.io/), get real time weather updates in the Toronto Area.
+- `Weather` : Powered by [weatherwidget.io](https://weatherwidget.io/), get real time weather updates in the Toronto Area.
 
 [![Weather](assets/weather.jpg)](https://anthonytedja.github.io/notion/weather/)
 
-- Clock : Analog display of local time.
+- `Clock` : Analog display of local time.
 
 [![Clock](assets/clock.jpg)](https://anthonytedja.github.io/notion/clock/)
 
-- Time : Display local time in English text.
+- `Time` : Display local time in English text.
 
 [![Time](assets/time.jpg)](https://anthonytedja.github.io/notion/time/)
 

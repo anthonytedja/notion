@@ -12,20 +12,28 @@ function Timer(duration, element) {
 		seconds: document.getElementById('seconds')
 	};
 
+	var clickTimer = null;
+
 	this.element.addEventListener(touchEvent, function(e) {
 		if (!e) var e = window.event;
 		e.cancelBubble = true;
 		if (e.stopPropagation) e.stopPropagation();
 		console.log(e.detail);
-		e.preventDefault();
-		if (e.detail == 2) {
-			timermode();
-		} else {
+
+		if (clickTimer == null) {
 			if (self.running) {
 				self.reset();
 			} else {
 				self.start();
 			}
+			clickTimer = setTimeout(function() {
+				clickTimer = null;
+			}, 400);
+		} else {
+			clearTimeout(clickTimer);
+			clickTimer = null;
+			e.preventDefault();
+			timermode();
 		}
 	});
 }

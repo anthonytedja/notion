@@ -9,15 +9,15 @@
 Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 
 - Click on the widget image in the preview section to take you to the widget site.
-- Copy the URL and paste the link into Notion and choose "create embed"
+- Copy the URL and paste the link into Notion and choose "Create embed"
 - Then, click on the desktop widget to switch between light and dark modes and it will remember your settings
 - Resize the widget to how you want and you're all set up!
 
 ## Preview
 
-`Pomodoro Timer` : [Pomodoro](https://todoist.com/productivity-methods/pomodoro-technique) is a productivity technique where a 25 minute work session is followed by a 5 minute break for each pomodoro period. Click on the timer to start the countdown, or double click to switch the timer modes from work to break. A notification will be played when the timer hits 0 so you don't need to keep your eyes on the widget.
+`Pomodoro` : [Pomodoro](https://todoist.com/productivity-methods/pomodoro-technique) is a productivity technique where a 25 minute work session is followed by a 5 minute break for each pomodoro period. Click on the timer to start the countdown, or double click to switch the timer modes from work to break. A notification will be played when the timer hits 0 so you don't need to keep your eyes on the widget.
 
-[![Pomodoro Timer](assets/pomodoro.jpg)](https://anthonytedja.github.io/notion/pomodoro/)
+[![Pomodoro](assets/pomodoro.jpg)](https://anthonytedja.github.io/notion/pomodoro/)
 
 `Weather` : Powered by [weatherwidget.io](https://weatherwidget.io/), get real time weather updates in the Toronto Area.
 

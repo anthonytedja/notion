@@ -6,9 +6,11 @@ document.getElementById('image').addEventListener(touchEvent, function(e) {
 	console.log('animate');
 	image = document.getElementById('image');
 	image.src = 'cat-animate.gif';
+	document.body.style.pointerEvents = 'none';
 
 	setTimeout(() => {
 		image.src = 'cat-idle.gif';
+		document.body.style.pointerEvents = 'auto';
 	}, 3500);
 });
 

@@ -35,9 +35,9 @@ function dark() {
 	localStorage.setItem('data-theme', 'gray');
 	document.documentElement.setAttribute('data-theme', 'gray');
 	document.getElementById('weather').setAttribute('data-theme', 'gray');
-	document.getElementById('weather').setAttribute('data-basecolor', '#2F3437');
+	document.getElementById('weather').setAttribute('data-basecolor', '#191919');
 	document.getElementById('weather').removeAttribute('data-textcolor');
-	document.getElementById('weather').setAttribute('data-cloudfill', '#2F3437');
+	document.getElementById('weather').setAttribute('data-cloudfill', '#191919');
 	script(document, 'script', 'weatherwidget-io-js');
 }
 

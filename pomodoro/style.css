@@ -2,13 +2,13 @@
 	--main-bg-color: #fff;
 	--main-text-color: #f58f70;
 	--main-fill-color: #e2e2e2;
-	--main-border-color: #000;
+	--main-border-color: #37352f;
 }
 
 [pomodoro-timer-data-theme="dark"] {
-	--main-bg-color: #2f3437;
+	--main-bg-color: #191919;
 	--main-text-color: #f58f70;
-	--main-fill-color: #41484c;
+	--main-fill-color: #252525;
 	--main-border-color: #fff;
 }
 

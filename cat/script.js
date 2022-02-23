@@ -9,7 +9,7 @@ document.getElementById('image').addEventListener(touchEvent, function(e) {
 
 	setTimeout(() => {
 		image.src = 'cat-idle.gif';
-	}, 3550);
+	}, 3500);
 });
 
 var image = (new Image().src = 'cat-idle.gif');

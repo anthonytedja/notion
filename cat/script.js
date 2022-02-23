@@ -5,10 +5,14 @@ document.getElementById('image').addEventListener(touchEvent, function(e) {
 	if (e.stopPropagation) e.stopPropagation();
 	console.log('animate');
 	image = document.getElementById('image');
-	image.src = 'cat.gif';
+	image.src = 'cat-animate.gif';
+
+	setTimeout(() => {
+		image.src = 'cat-idle.gif';
+	}, 3550);
 });
 
-var image = (new Image().src = 'cat.gif');
+var image = (new Image().src = 'cat-idle.gif');
 
 window.addEventListener(touchEvent, mode);
 

@@ -35,6 +35,10 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 
 [![Cat](assets/cat.jpg)](https://anthonytedja.github.io/notion/cat/)
 
+`Kirby` : Poke Kirby to wake it up from its sleep!
+
+[![Kirby](assets/kirby.jpg)](https://anthonytedja.github.io/notion/kirby/)
+
 `Rimuru` : Poke Rimuru the Slime to see it jump! Pixel Artist: [pixelcatto](https://www.deviantart.com/pixelcatto/art/Rimuru-Tempest-animation-784802109).
 
 [![Rimuru](assets/rimuru.jpg)](https://anthonytedja.github.io/notion/rimuru/)

@@ -9,12 +9,12 @@ document.getElementById('image').addEventListener(touchEvent, function(e) {
 	document.body.style.pointerEvents = 'none';
 
 	setTimeout(() => {
-		image.src = 'cat-idle.gif';
+		image.src = 'cat.gif';
 		document.body.style.pointerEvents = 'auto';
-	}, 3500);
+	}, 3675);
 });
 
-var image = (new Image().src = 'cat-idle.gif');
+var image = (new Image().src = 'cat.gif');
 
 window.addEventListener(touchEvent, mode);
 

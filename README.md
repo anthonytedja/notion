@@ -31,9 +31,17 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 
 [![Time](assets/time.jpg)](https://anthonytedja.github.io/notion/time/)
 
-`Rimuru` : Interact with Rimuru the Slime! Pixel Artist: [pixelcatto](https://www.deviantart.com/pixelcatto/art/Rimuru-Tempest-animation-784802109).
+`Rimuru` : Poke Rimuru the Slime to see it jump! Pixel Artist: [pixelcatto](https://www.deviantart.com/pixelcatto/art/Rimuru-Tempest-animation-784802109).
 
 [![Rimuru](assets/rimuru.jpg)](https://anthonytedja.github.io/notion/rimuru/)
+
+`Cat` : Poke the sleepy cat to see it roll over and yawn!
+
+[![Cat](assets/cat.jpg)](https://anthonytedja.github.io/notion/cat/)
+
+`Bunny` : Poke the chubby bunny to see it try and catch its breath!
+
+[![Bunny](assets/bunny.jpg)](https://anthonytedja.github.io/notion/bunny/)
 
 ## Features
 

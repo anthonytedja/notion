@@ -1,6 +1,6 @@
 # notion
 
-[![Demo Gif](assets/demo.gif)](https://www.notion.so/help/embed-and-connect-other-apps)
+[![Demo Gif](assets/demo.gif)](https://github.com/anthonytedja/notion)
 
 > notion hosts widgets for Notion pages.
 

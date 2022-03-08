@@ -21,6 +21,7 @@ function animate() {
 
 var image = (new Image().src = 'kirby.gif');
 
+/* FOR JS LOCAL STORAGE SETTINGS
 window.addEventListener(touchEvent, mode);
 
 function mode() {
@@ -50,3 +51,26 @@ if (currentTheme == 'light') {
 } else {
 	dark();
 }
+*/
+
+// DYNAMIC THEME SETTINGS BASED ON OS PREFERENCE
+
+function light() {
+	document.documentElement.setAttribute('kirby-data-theme', 'light');
+}
+
+function dark() {
+	document.documentElement.setAttribute('kirby-data-theme', 'dark');
+}
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	dark();
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+	if (event.matches) {
+		dark();
+	} else {
+		light();
+	}
+});

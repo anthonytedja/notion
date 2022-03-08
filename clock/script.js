@@ -17,6 +17,7 @@ const setClock = () => {
 setClock();
 setInterval(setClock, 1000);
 
+/* FOR JS LOCAL STORAGE SETTINGS
 let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
 
 window.addEventListener(touchEvent, mode);
@@ -48,3 +49,26 @@ if (currentTheme == 'light') {
 } else {
 	dark();
 }
+*/
+
+// DYNAMIC THEME SETTINGS BASED ON OS PREFERENCE
+
+function light() {
+	document.documentElement.setAttribute('clock-data-theme', 'light');
+}
+
+function dark() {
+	document.documentElement.setAttribute('clock-data-theme', 'dark');
+}
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	dark();
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+	if (event.matches) {
+		dark();
+	} else {
+		light();
+	}
+});

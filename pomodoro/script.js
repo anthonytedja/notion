@@ -94,8 +94,6 @@ function fmtMSS(s) {
 	return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + s;
 }
 
-window.addEventListener(touchEvent, mode);
-
 function timermode() {
 	const timertype = document.documentElement.getAttribute('pomodoro-timer-mode');
 	console.log(timertype);
@@ -119,6 +117,9 @@ function breakmode() {
 	timer.duration = 300000;
 	timer.reset();
 }
+
+/* FOR JS LOCAL STORAGE SETTINGS
+window.addEventListener(touchEvent, mode);
 
 function mode() {
 	const currentTheme = localStorage.getItem('pomodoro-timer-data-theme');
@@ -147,3 +148,26 @@ if (currentTheme == 'light') {
 } else {
 	dark();
 }
+*/
+
+// DYNAMIC THEME SETTINGS BASED ON OS PREFERENCE
+
+function light() {
+	document.documentElement.setAttribute('pomodoro-timer-data-theme', 'light');
+}
+
+function dark() {
+	document.documentElement.setAttribute('pomodoro-timer-data-theme', 'dark');
+}
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	dark();
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+	if (event.matches) {
+		dark();
+	} else {
+		light();
+	}
+});

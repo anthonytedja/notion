@@ -10,6 +10,7 @@ document.getElementById('image').addEventListener(touchEvent, function(e) {
 
 var image = (new Image().src = 'bunny.gif');
 
+/* FOR JS LOCAL STORAGE SETTINGS
 window.addEventListener(touchEvent, mode);
 
 function mode() {
@@ -39,3 +40,26 @@ if (currentTheme == 'light') {
 } else {
 	dark();
 }
+*/
+
+// DYNAMIC THEME SETTINGS BASED ON OS PREFERENCE
+
+function light() {
+	document.documentElement.setAttribute('bunny-data-theme', 'light');
+}
+
+function dark() {
+	document.documentElement.setAttribute('bunny-data-theme', 'dark');
+}
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+	dark();
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
+	if (event.matches) {
+		dark();
+	} else {
+		light();
+	}
+});

@@ -8,11 +8,11 @@
 
 Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 
-- Click on the widget image in the preview section to take you to the widget site.
-- Copy the URL and paste the link into Notion and choose "Create embed"
-- Make sure the appearance uses system settings on desktop to match the theme style.
 ![Demo Gif](assets/settings.jpg)
 
+- Use system settings for appearance on desktop to match the theme style.
+- Click on the widget image in the preview section below to take you to the widget site.
+- Copy the URL and paste the link into Notion and choose "Create embed"
 - Resize the widget to how you want and you're all set up!
 
 ## Preview

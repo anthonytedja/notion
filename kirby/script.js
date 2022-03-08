@@ -65,6 +65,8 @@ function dark() {
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 	dark();
+} else {
+	light();
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {

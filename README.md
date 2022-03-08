@@ -10,7 +10,9 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 
 - Click on the widget image in the preview section to take you to the widget site.
 - Copy the URL and paste the link into Notion and choose "Create embed"
-- Then, click on the desktop widget to switch between light and dark modes and it will remember your settings
+- Make sure the appearance uses system settings on desktop to match the theme style.
+![Demo Gif](assets/settings.jpg)
+
 - Resize the widget to how you want and you're all set up!
 
 ## Preview
@@ -49,8 +51,8 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget>/`
 
 ## Features
 
-- Mobile friendly
-- JS local storage to remember light and dark mode settings
+- Supported for Mobile App and Desktop Page
+- JS Media Queries to automatically match theme settings
 
 ## Built With
 

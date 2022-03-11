@@ -1,6 +1,6 @@
 # notion
 
-[![Demo Gif](assets/demo.gif)](https://github.com/anthonytedja/notion)
+[![Demo Gif](assets/widgets.gif)](https://github.com/anthonytedja/notion)
 
 > notion hosts widgets for Notion pages.
 
@@ -8,9 +8,11 @@
 
 Embed widget links are given by `anthonytedja.github.io/notion/<widget-name>/`
 
-![Demo Gif](assets/settings.jpg)
+![Setup Demo](assets/settings.jpg)
 
 > **_IMPORTANT:_**  Use system settings for appearance on desktop to match the theme style.
+
+[![Demo Gif](assets/demo.gif)](https://github.com/anthonytedja/notion)
 
 - Click on the widget image in the preview section below to take you to the widget site.
 - Copy the URL and paste the link into Notion and choose "Create embed"
@@ -18,7 +20,7 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget-name>/`
 
 ## Preview
 
-`Pomodoro` : [Pomodoro](https://todoist.com/productivity-methods/pomodoro-technique) is a productivity technique where a 25 minute work session is followed by a 5 minute break for each pomodoro period. Click on the timer to start the countdown, or double click to switch the timer modes from work to break. A notification will be played when the timer hits 0 so you don't need to keep your eyes on the widget.
+`Pomodoro` : [Pomodoro](https://todoist.com/productivity-methods/pomodoro-technique) is a productivity technique where a 25 minute work session is followed by a 5 minute break for each pomodoro period. Click on the timer to start the countdown, or double / triple click to switch the timer modes from work to break. A notification will be played when the timer hits 0 so you don't need to keep your eyes on the widget.
 
 [![Pomodoro](assets/pomodoro.jpg)](https://anthonytedja.github.io/notion/pomodoro/)
 

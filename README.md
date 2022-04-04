@@ -55,7 +55,8 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget-name>/`
 ## Features
 
 - Supported for Mobile App and Desktop Page
-- JS Media Queries to automatically match theme settings
+- ~V2: JS Local Storage to save theme settings~
+- V3: JS Media Queries to automatically match theme settings
 
 ## Built With
 

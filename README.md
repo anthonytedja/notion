@@ -1,6 +1,6 @@
 # notion
 
-[![Demo Gif](assets/widgets.gif)](https://github.com/anthonytedja/notion)
+[![Demo Gif](assets/notion.jpg)](https://github.com/anthonytedja/notion)
 
 > notion hosts widgets for Notion pages.
 
@@ -17,6 +17,8 @@ Embed widget links are given by `anthonytedja.github.io/notion/<widget-name>/`
 - Click on the widget image in the preview section below to take you to the widget site.
 - Copy the URL and paste the link into Notion and choose "Create embed"
 - Resize the widget to how you want and you're all set up!
+
+[![Demo Gif](assets/widgets.gif)](https://github.com/anthonytedja/notion)
 
 ## Preview
 

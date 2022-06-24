@@ -37,6 +37,7 @@ function textClock() {
 		10: '#ten-hr',
 		11: '#eleven',
 		12: '#twelve',
+		13: '#one',
 		23: '#eleven',
 		24: '#midnight',
 		0: '#midnight'
